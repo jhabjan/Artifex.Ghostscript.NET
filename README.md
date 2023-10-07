@@ -1,32 +1,25 @@
 ![logo](https://artifex.com/images/logos/ghostscript-github-icon.png)
 
-**Ghostscript.NET** - (written in C#) is the most completed managed wrapper library around the Ghostscript library (32-bit & 64-bit), an interpreter for the PostScript language, PDF, related software and documentation.
+**Ghostscript.NET** - Crafted in C#, this is the most comprehensive managed wrapper library available for the Ghostscript library, which supports both 32-bit and 64-bit systems. Ghostscript itself serves as an interpreter for the PostScript language, as well as for PDF files, along with associated software and documentation.
 
 [**NuGet: PM> Install-Package Ghostscript.NET**](http://nuget.org/packages/Ghostscript.NET/)
 
 **Contains**
- * GhostscriptViewer - View PDF, EPS or multi-page PostScript files on the screen
- * GhostscriptRasterizer - Rasterize PDF, EPS or multi-page PostScript files to any common image format.
- * GhostscriptProcessor - An easy way to call a Ghostscript library with a custom arguments / switches.
- * GhostscriptInterpreter - The PostScript interpreter.
-
+* GhostscriptViewer - Render PDF, EPS, or multi-page PostScript files for on-screen viewing.
+* GhostscriptRasterizer - Convert PDF, EPS, or multi-page PostScript files into various standard image formats.
+* GhostscriptProcessor - Simplify the invocation of Ghostscript library with custom arguments/switches.
+* GhostscriptInterpreter - Engage the PostScript interpreter functionality.
+* 
 **Other features**
- * allows you to rasterize files in memory without storing the output to disk.
- * supports zoom-in and zoom-out.
- * supports progressive update.
- * allows you to run multiple Ghostscript instances simultaneously within a single process.
- * compatible with 32-bit and 64-bit Ghostscript native library.
+* Enables in-memory rasterization without the need for intermediate disk storage.
+* Facilitates zooming in and out capabilities.
+* Offers support for progressive updates.
+* Permits the concurrent operation of multiple Ghostscript instances within a single process.
+* Compatible with both 32-bit and 64-bit versions of the native Ghostscript library.
 
-**Latest changes - 2021-03-09 - v.1.2.3.**
-* fixed GhostscriptRasterizer/GhostscriptViewer and Ghostscript v.9.50+ compatibility issues.
-
-**Latest changes - 2021-02-04 - v.1.2.2.**
- * fixed Ghostscript v.9.26 + (all later versions) compatibility.
- * fixed problem when opening path/file that contains non ASCII characters.
- * fixed "Arithmetic operation resulted in an overflow" when using multithread instance.
- * changed Y and Y DPI settings to match GhostscriptViewer.
- * fixed CurrentPage -> TotalPages logging.
- * fixed watermark transparency bug for PDF.
+**Latest changes - 2023-10-07 - v.1.2.4.**
+* Resolved the problem with PDF media calculations that was causing blank pages in the rendered PDF.
+* When Ghostscript.NET parses comments like "%%BoundingBox", it expects line to end with either \n (Unix) or \r\n (Windows). This patch adds support for files generated on Apple devices where lines ends with '\r'.
  
 **Samples built on the top of the Ghostscript.NET library**
 
