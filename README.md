@@ -9,7 +9,7 @@
 * GhostscriptRasterizer - Convert PDF, EPS, or multi-page PostScript files into various standard image formats.
 * GhostscriptProcessor - Simplify the invocation of Ghostscript library with custom arguments/switches.
 * GhostscriptInterpreter - Engage the PostScript interpreter functionality.
-* 
+
 **Other features**
 * Enables in-memory rasterization without the need for intermediate disk storage.
 * Facilitates zooming in and out capabilities.
