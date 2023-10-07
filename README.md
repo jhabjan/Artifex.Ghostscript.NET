@@ -1,6 +1,8 @@
-**Ghostscript.NET** - Crafted in C#, this is the most comprehensive managed wrapper library available for the Ghostscript library, which supports both 32-bit and 64-bit systems. Ghostscript itself serves as an interpreter for the PostScript language, as well as for PDF files, along with associated software and documentation.
+**Artifex.Ghostscript.NET** - Crafted in C#, this is the most comprehensive managed wrapper library available for the Ghostscript library, which supports both 32-bit and 64-bit systems. Ghostscript itself serves as an interpreter for the PostScript language, as well as for PDF files, along with associated software and documentation.
 
-[**NuGet: PM> Install-Package Ghostscript.NET**](http://nuget.org/packages/Ghostscript.NET/)
+In mid-2023, Ghostscript.NET underwent a significant transition as it was acquired by Artifex. However, after some time, we decided to part ways. As a result, I embarked on a new endeavor, creating a distinct library named Artifex.Ghostscript.NET. This independent project is now under my sole maintenance, ensuring its continued development and support.
+
+[**NuGet: PM> Install-Package Ghostscript.NET**](http://nuget.org/packages/Artifex.Ghostscript.NET/)
 
 **Contains**
 * GhostscriptViewer - Render PDF, EPS, or multi-page PostScript files for on-screen viewing.

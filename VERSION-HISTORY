@@ -14,7 +14,9 @@ HISTORY of the Ghostscript.NET library
 
 1.2.4.         2023-10-07
 -------------------------
-
+- resolved the problem with PDF media calculations that was causing blank pages in the rendered PDF.
+- when Ghostscript.NET parses comments like "%%BoundingBox", it expects line to end with either \n (Unix) or \r\n (Windows). This patch adds support for files generated on Apple devices where lines ends with '\r'.
+- adjusted to work with Ghostscript 10.02.
 
 1.2.3.         2021-03-09
 -------------------------
