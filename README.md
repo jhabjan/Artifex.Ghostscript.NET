@@ -2,7 +2,7 @@
 
 In mid-2023, Ghostscript.NET underwent a significant transition as it was acquired by Artifex. However, after some time, we decided to part ways. As a result, I embarked on a new endeavor, creating a distinct library named Artifex.Ghostscript.NET. This independent project is now under my sole maintenance, ensuring its continued development and support.
 
-[**NuGet: PM> Install-Package Ghostscript.NET**](http://nuget.org/packages/Artifex.Ghostscript.NET/)
+[**NuGet: PM> Install-Package Artifex.Ghostscript.NET**](http://nuget.org/packages/Artifex.Ghostscript.NET/)
 
 **Contains**
 * GhostscriptViewer - Render PDF, EPS, or multi-page PostScript files for on-screen viewing.
